@@ -19,13 +19,15 @@ Group – Users in the same group as the file
 Others – Everyone else
 
 🧾 Viewing Permissions
+
 To check file permissions:
 
-
 ls -l
+
 Example output:
 
 -rwxr-xr--  1 john devs  4096 Apr 10  file.sh
+
 Breakdown:
 
 - → regular file (d would be directory)
@@ -37,7 +39,9 @@ r-x → group permissions (read, execute)
 r-- → others permissions (read only)
 
 🔧 Changing Permissions
+
 ✅ chmod – Change Permissions
+
 Symbolic Mode:
 
 chmod u+x file.sh      # Add execute to user
@@ -123,4 +127,5 @@ Use umask to set default permission behavior for new files.
 🔍 Check Permissions with:
 
 ls -ld filename        # Check file or directory permissions
+
 stat filename          # Detailed info including permissions
